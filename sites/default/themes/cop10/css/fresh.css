@@ -1,3 +1,10 @@
+body{
+color:#575757;
+font-family:"Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
+font-size:90%;
+}
+
+
 div.view-Pictures-block div.field-content img{
 padding-bottom:3px;
 }
@@ -10,21 +17,16 @@ padding-right:20px;
 
 #logo img {
 vertical-align:center;
-padding-left:7%;
+padding-left:4%;
 padding-top:10px;
 padding-bottom:10px;
 }
 
-#body{
-color:#575757;
-font-family:"Calibri","Trebuchet MS","Helvetica","Arial","Verdana";
-font-size:12px;
-
-}
 
 
 #content-area{
 clear:right;
+
 }
 
 /*Vista Events*/
@@ -41,6 +43,8 @@ clear:left;
 
 /*Vista News */
 
+
+
 div.view-news div.view-content div.views-field-field-imagen-fid a{
 float:left;
 padding-right:15px;
@@ -52,6 +56,8 @@ clear:left;
 }
 
 /* Vista resources*/
+
+
 div.view-Resources div.view-content div.views-field-field-imagen-fid img{
 float:left;
 padding-right:15px;
