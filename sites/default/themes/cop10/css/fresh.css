@@ -29,9 +29,27 @@ clear:right;
 
 }
 
+/* Bloques de imagenes*/
+
+
+
 div.view-Pictures-block div.field-content img{
 padding-bottom:3px;
 }
+div.view-display-id-block_1 div.view-content span.field-content img{
+padding-top:7px;
+}
+
+div.view-display-id-block_2 div.view-content span.field-content img{
+padding-top:15px;
+float:left;
+padding-right:30px;
+}
+
+div.view-display-id-block_2  div.view-content{
+padding-left:25%;
+}
+
 
 div.field-content img{
 float:left;
@@ -53,8 +71,12 @@ div.view-events div.view-content div.views-field-field-imagen-fid{
 clear:left;
 }
 
-/*Vista News */
+div.view-events div.view-content{
+padding-top:10px;
+}
 
+/*Vista News */
+/*
 div.view-news div.view-content div.views-field-field-imagen-fid a{
 float:left;
 padding-right:15px;
@@ -64,11 +86,27 @@ padding-bottom:15px;
 div.view-news div.view-content div.views-field-field-imagen-fid{
 clear:left;
 }
-
+*/
 div.view-news div.view-content div.views-field-created span.field-content{
-float:left;
-padding-right:5px;
+padding-bottom:5px;
 }
+
+div.view-news div.view-content div.views-field-field-autor-value{
+padding-bottom:5px;
+}
+
+div.view-news div.view-content div.views-field-field-imagen-fid{
+padding-top:5px;
+padding-bottom:5px;
+}
+
+
+
+div.view-news div.view-content div.views-field-title span.field-content a{
+font-size:16px;
+text-decoration:none;
+}
+
 
 /* Vista resources*/
 
