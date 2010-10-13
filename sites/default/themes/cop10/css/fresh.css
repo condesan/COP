@@ -13,9 +13,9 @@ padding-bottom:15px;
 
 #logo img {
 vertical-align:center;
-padding-left:4%;
 padding-top:10px;
 padding-bottom:10px;
+/*padding-left:1%;*/
 }
 
 /* Bloque noticias */
@@ -26,8 +26,58 @@ padding-top:15px;
 
 #content-area{
 clear:right;
-
 }
+
+#main a{
+color:#802537;
+text-decoration:none;
+}
+
+#main a:hover{
+color:#802537;
+}
+
+#footer{
+height:100px;
+background-color:#F8F8FA
+}
+
+/* Menu */
+
+#block-menu-menu-principal ul {
+padding:0 0 0.25em 0;
+}
+
+#block-menu-menu-principal .content ul.menu li {
+line-height:21px;
+list-style:none outside none;
+margin:0;
+overflow:hidden;
+padding:0 0 4px;
+}
+
+#block-menu-menu-principal .content ul.menu li a {
+background:none repeat scroll 0 0 #DEDFE3;
+display:block;
+font-size:12px;
+font-weight:normal;
+overflow:hidden;
+padding-left:5px;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+#block-menu-menu-principal .content ul.menu li a:hover{
+background:none repeat scroll 0 0 #DEDFE3;
+display:block;
+font-size:12px;
+font-weight:normal;
+overflow:hidden;
+padding-left:5px;
+text-decoration:underline;
+text-transform:uppercase;
+}
+
 
 /* Bloques de imagenes*/
 
@@ -43,11 +93,16 @@ padding-top:7px;
 div.view-display-id-block_2 div.view-content span.field-content img{
 padding-top:15px;
 float:left;
-padding-right:30px;
+padding-right:70px;
+padding-bottom:15px;
+}
+
+div.view-display-id-block_2{
+background-color:#333;
 }
 
 div.view-display-id-block_2  div.view-content{
-padding-left:25%;
+padding-left:22%;
 }
 
 
@@ -76,24 +131,22 @@ padding-top:10px;
 }
 
 /*Vista News */
-/*
+
 div.view-news div.view-content div.views-field-field-imagen-fid a{
 float:left;
-padding-right:15px;
+padding-right:10px;
 padding-bottom:15px;
 }
 
 div.view-news div.view-content div.views-field-field-imagen-fid{
 clear:left;
 }
-*/
+
 div.view-news div.view-content div.views-field-created span.field-content{
-padding-bottom:5px;
+float:left;
+padding-right:5px;
 }
 
-div.view-news div.view-content div.views-field-field-autor-value{
-padding-bottom:5px;
-}
 
 div.view-news div.view-content div.views-field-field-imagen-fid{
 padding-top:5px;
@@ -103,7 +156,7 @@ padding-bottom:5px;
 
 
 div.view-news div.view-content div.views-field-title span.field-content a{
-font-size:16px;
+font-size:12px;
 text-decoration:none;
 }
 
