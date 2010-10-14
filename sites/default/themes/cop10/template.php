@@ -98,11 +98,19 @@ function cop10_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
+
 function cop10_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+  global $language;
+  $header = array(
+	'es' => 'banner-cop10es.jpg',
+	'en' => 'banner-cop10en.jpg',
+  );
+   
+  #$vars['img_header'] = theme('image', path_to_theme().'images/'.$header[$language->language]);
+  $vars['img_header'] = path_to_theme().'/images/' . $header[$language->language];
+  
 }
-// */
+
 
 /**
  * Override or insert variables into the node templates.
