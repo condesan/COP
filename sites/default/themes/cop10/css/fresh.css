@@ -161,7 +161,7 @@ background-color:#333;
 }
 
 div.view-display-id-block_2  div.view-content{
-padding-left:21%;
+padding-left:4%;
 }
 
 
@@ -174,12 +174,12 @@ padding-right:20px;
 
 
 /*Vista Events*/
-
+/*
 div.view-events div.view-content div.views-field-field-imagen-fid a{
 float:left;
 padding-right:15px;
 padding-bottom:15px;
-}
+}*/
 
 div.view-events div.view-content div.views-field-field-imagen-fid{
 clear:left;
@@ -187,6 +187,20 @@ clear:left;
 
 div.view-events div.view-content{
 padding-top:10px;
+}
+
+div.view-events div.view-content div.views-field-title a{
+font-size:16px;
+}
+
+div.view-events div.view-content div.views-field-title{
+padding-top:30px;
+padding-bottom:5px;
+}
+
+
+div.view-events div.view-content div.field-content div.field-item{
+padding-bottom:3px;
 }
 
 /*Vista News */

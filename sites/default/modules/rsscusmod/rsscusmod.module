@@ -1,0 +1,57 @@
+<?php
+
+function rsscusmod_menu(){
+
+	$items['custom'] = array(
+		'title' => 'Noticias Infoandina',
+		'description' => 'to do', 
+		'type' => MENU_CALLBACK,
+		'access callback' => TRUE,
+		'page callback' => 'listado',
+	);
+
+return $items;
+
+}
+
+
+function listado() {
+
+	$sql = "SELECT title, author, description, link FROM {aggregator_item} WHERE fid = '%d'";
+
+	#$query = db_query($sql , '4');
+
+	$fid = 4;
+	$pager_num = 0; // This is the first pager on this page. We number it 0.
+	$result = pager_query(db_rewrite_sql($sql), 5, $pager_num, NULL, $fid);
+
+
+	while($row = db_fetch_object($result)) {
+   
+	 if ($row->link == 'http://www.paramo.org') { 
+				$image = '';
+			}
+	 else {
+				$image = $row->link;
+		 };
+	
+	$output = trim($image);
+	$output .= trim("<a href='http://www.paramo.org".$row->author."' target='_blank'>".$row->title)."</a><br />";
+	$output .= trim($row->description)."<br />";
+
+
+   #$output = dsm($row);
+	 
+	$list[] = $output;
+	
+	
+}
+
+
+return theme('item_list', $list) . theme('pager', NULL, 5, $pager_num);
+
+}
+
+
+
+

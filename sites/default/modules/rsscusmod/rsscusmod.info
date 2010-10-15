@@ -1,0 +1,4 @@
+; $Id$
+name = rss customod
+description = to do
+core = 6.x

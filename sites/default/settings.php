@@ -89,7 +89,7 @@
  *   $db_url = 'mysqli://username:password@localhost/databasename';
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
-$db_url = 'mysqli://root:lachari@localhost/cop';
+$db_url = 'mysql://devcond_cop:admin@localhost/devcond_cop';
 $db_prefix = 'cop_';
 
 /**
