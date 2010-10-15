@@ -107,7 +107,7 @@ function cop10_preprocess_page(&$vars, $hook) {
   );
    
   #$vars['img_header'] = theme('image', path_to_theme().'images/'.$header[$language->language]);
-  $vars['img_header'] = path_to_theme().'/images/' . $header[$language->language];
+  $vars['img_header'] = base_path().path_to_theme().'/images/' . $header[$language->language];
   
 }
 
