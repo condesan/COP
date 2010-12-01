@@ -157,11 +157,11 @@ padding-bottom:15px;
 }
 
 div.view-display-id-block_2{
-background-color:#333;
+/*background-color:#333;*/
 }
 
 div.view-display-id-block_2  div.view-content{
-padding-left:4%;
+padding-left: 120px;
 }
 
 
@@ -276,4 +276,32 @@ font-weight:bolder;
 
 #logo {
 display:none;
+}
+
+
+/* Twitter */
+
+.twittersp .view-content .views-field-text{
+font-size:10px;
+}
+
+td.twittersp{
+width:100px;
+}
+
+.twitteren .view-content .views-field-text{
+font-size:10px;
+}
+
+/* publicaciones */
+
+.recursosmain .view-content li{
+padding-bottom:10px;
+clear:both;
+}
+
+.two-sidebars #content {
+margin-left:220px;
+margin-right:-780px;
+width:540px;
 }

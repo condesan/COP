@@ -102,16 +102,20 @@ function cop10_preprocess(&$vars, $hook) {
 function cop10_preprocess_page(&$vars, $hook) {
   global $language;
   $header = array(
-	'es' => 'banner-cop10es.jpg',
-	'en' => 'banner-cop10en.jpg',
+	'es' => 'banner-cop16es.jpg',
+	'en' => 'banner-cop16en.jpg',
   );
+/*
   $head_title = array(
 	'es' => 'Biodiversidad de Montañas en la COP10',
 	'en' => 'Mountain Biodiversity at COP10',
   );
+*/
   #$vars['img_header'] = theme('image', path_to_theme().'images/'.$header[$language->language]);
   $vars['img_header'] = base_path().path_to_theme().'/images/' . $header[$language->language];
+/*
   $vars['head_title'] = $head_title[$language->language];
+*/
 }
 
 
