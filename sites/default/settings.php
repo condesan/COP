@@ -89,7 +89,7 @@
  *   $db_url = 'mysqli://username:password@localhost/databasename';
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
-$db_url = 'mysql://devcond_cop:admin@localhost/devcond_cop';
+$db_url = 'mysql://devcond_cop16:79e~5vOye=d*@localhost/devcond_cop16';
 $db_prefix = 'cop_';
 
 /**
@@ -237,3 +237,11 @@ ini_set('url_rewriter.tags',        '');
 #   'forum'      => 'Discussion board',
 #   '@count min' => '@count minutes',
 # );
+
+$conf['i18n_variables'] = array(
+  // Site name, slogan, mission, etc..
+  'site_name',
+  'site_slogan',
+  'site_mission',
+  'site_footer'
+);
